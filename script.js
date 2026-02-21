@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Hotel = void 0;
 var activities_1 = require("./activities");
 var Hotel = /** @class */ (function () {
     function Hotel(id, name, cost, category) {
@@ -17,6 +18,7 @@ var Hotel = /** @class */ (function () {
     };
     return Hotel;
 }());
+exports.Hotel = Hotel;
 var peakLodge = new Hotel("06", "Peak Lodge", 250, "gold");
 peakLodge.addAmenity("breakfast");
 peakLodge.addAmenity("wifi");

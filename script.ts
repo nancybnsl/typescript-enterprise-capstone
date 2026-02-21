@@ -4,7 +4,7 @@ import { cookingClass, massage, printAttendies,skiLesson } from "./activities";
 
 type HotelCategory = "gold" | "silver" | "bronze";
 
-class Hotel {
+export class Hotel {
   readonly id: string;
   readonly name: string;
   cost: number;
