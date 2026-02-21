@@ -1,20 +1,22 @@
 // Create your class here.
 var Hotel = /** @class */ (function () {
-    function Hotel(id, name, cost, ameneties) {
+    function Hotel(id, name, cost, category) {
+        this.amenities = [];
         this.id = id;
         this.name = name;
         this.cost = cost;
-        this.ameneties = ameneties;
+        this.category = category;
     }
     Hotel.prototype.addAmenity = function (amenity) {
-        this.ameneties.push(amenity);
+        this.amenities.push(amenity);
     };
-    Hotel.prototype.descibeHotel = function () {
-        return "".concat(this.name, " costs ").concat(this.cost, "  and includes  the following amenities: ").concat(this.ameneties.join(", "), ".");
+    Hotel.prototype.describeHotel = function () {
+        return "The ".concat(this.name, " costs $").concat(this.cost, "  for category ").concat(this.category, " and includes the following amenities: ").concat(this.amenities.join(", "), ".");
     };
     return Hotel;
 }());
-var marriott = new Hotel("1", "Marriott", 200, ["Pool", "Gym", "Free Wi-Fi"]);
-marriott.descibeHotel();
-marriott.addAmenity("Spa");
-marriott.descibeHotel();
+var peakLodge = new Hotel("06", "Peak Lodge", 250, "gold");
+peakLodge.addAmenity("breakfast");
+peakLodge.addAmenity("wifi");
+var description = peakLodge.describeHotel();
+console.log(description);
