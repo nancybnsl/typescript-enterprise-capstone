@@ -22,4 +22,6 @@ peakLodge.addAmenity("breakfast");
 peakLodge.addAmenity("wifi");
 var description = peakLodge.describeHotel();
 console.log(description);
-console.log(activities_1.skiLesson);
+(0, activities_1.printAttendies)(activities_1.skiLesson);
+(0, activities_1.printAttendies)(activities_1.massage);
+(0, activities_1.printAttendies)(activities_1.cookingClass);

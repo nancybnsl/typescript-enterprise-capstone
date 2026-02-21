@@ -44,3 +44,8 @@ export const massage: Activity<GuestWithActivity<SpaEnthusiast>> =
       }
     ]
   };
+
+  export function printAttendies<ActivityType>(activity: Activity<ActivityType>) {
+    console.log(`Attendees for ${activity.name}:`); 
+    console.log(activity.attendees);
+  };

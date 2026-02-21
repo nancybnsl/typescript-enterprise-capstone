@@ -1,4 +1,4 @@
-import { skiLesson } from "./activities";
+import { cookingClass, massage, printAttendies,skiLesson } from "./activities";
 
 
 
@@ -34,4 +34,6 @@ peakLodge.addAmenity("breakfast");
 peakLodge.addAmenity("wifi");
 let description = peakLodge.describeHotel();
 console.log(description);
-console.log(skiLesson);
+printAttendies(skiLesson);
+printAttendies(massage);
+printAttendies(cookingClass);

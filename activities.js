@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.massage = exports.cookingClass = exports.skiLesson = void 0;
+exports.printAttendies = printAttendies;
 exports.skiLesson = {
     name: "Steeps Clinic",
     location: "Matterhorn Gondola",
@@ -35,3 +36,8 @@ exports.massage = {
         }
     ]
 };
+function printAttendies(activity) {
+    console.log("Attendees for ".concat(activity.name, ":"));
+    console.log(activity.attendees);
+}
+;
